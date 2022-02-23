@@ -1,0 +1,118 @@
+<Doctype! html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="blog_css.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body {
+			margin: 0;
+			scroll-behavior: smooth;
+		}
+
+		.header {
+			padding: 10px;
+			font-family: sans-serif;
+			font-weight: 100;
+		}
+
+		.header h1 {
+			font-size: 64px;
+			color: white;
+			margin-top: 50px;
+			margin-left: 75px;
+		}
+
+		.header p {
+			text-align: justify;
+			text-align: center;
+			color: whitesmoke;
+			font-family: fantasy;
+			font-size: 22px;
+		}
+
+		.row2 {
+		margin: 8px -16px;
+	}
+
+	.row2,
+	.row2 > .column {
+		padding: 8px;
+	}
+
+		.col img {
+			min-height: 100%;
+			width: 400px;
+			margin:  20px;
+			border-color: black;
+			border-width: 10px;
+			border-style: double;
+		}
+
+		.col h1 {
+			text-align: center;
+		}
+
+		.col {
+		float:  left;
+		width:  40%;
+		border-radius: 25%;
+		margin-left: 45px;
+	}
+
+	.row2:after {
+		content:  "";
+		display:  table;
+		clear:  both;
+	}
+
+	.foot {
+		margin-top: 8px;
+		padding:  16px 14px;
+		text-align: center;
+		color:  black;
+		background-color: white;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<img class ="logo" src="assets/guitarlogo.jpeg">
+		<h1 class="titleNav">Guitar Central</h1>
+		<div class="topnav">
+		   <a href="index.html">Home</a>
+		   <a href="#blog">Famous Blogs</a>
+		   <a href="#about" class="actve">About</a>
+		   <a href="#contact">Contact</a>
+	    </div>
+	</div>
+
+	<div class="header">
+		<h1>About</h1>
+		<div class=row2>
+			<div class=col>
+				<img src="assets/guitar_story1.jpeg">
+			</div>
+			<div class="col">
+				<h1>Guitar Central at Heart</h1>
+				<p>The guitar is a fretted musical instrument that typically has six strings. It is held flat against the player's body and played by strumming or plucking the strings with the dominant hand, while simultaneously pressing selected strings against frets with the fingers of the opposite hand. A plectrum or individual finger picks may also be used to strike the strings. The sound of the guitar is projected either acoustically, by means of a resonant chamber on the instrument, or amplified by an electronic pickup and an amplifier.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<p>Guitar Centreal created by dylan_petzer © </p>
+		<div class="row">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+		</div>
+	</div>
+
+
+</body>
+</html>
