@@ -4,278 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport", content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<style>
-	.navbar {
-		margin-top: -10px;
-		margin-left: -10px;
-		width: 100%;
-		height:  60px;
-		background: #41B3A3;
-		padding: 10px;
-		overflow: hidden;
-		position: sticky;
-	}
-
-	img {
-		background-color: transparent;
-	}
-
-	body {
-		background-color: #41B3A3;
-	}
-
-	.titleNav {
-		font-family: courier;
-		font-size: 16px;
-		float: left;
-		padding: 10px, 10px, 8px, 8px;
-		margin-left: 5px;
-		margin-top: 20px;
-		color: #C58139;
-	}
-
-	.logo {
-		float:  left;
-		margin-left: 10px;
-		border-radius: 45px;
-		width: 60px;
-		height: 65px;
-		background-color: transparent;
-		border-color: black;
-	}
-
-	.topnav {
-		float:  right;
-		margin-top: -10px;
-		width: 40%;
-		height:  60px;
-		background-color: transparent;
-		overflow: hidden;
-		padding: 10px;
-	}
-
-	.topnav a {
-		float: left;
-		text-align: center;
-		margin-left: 20px;
-		margin-top: 8px;
-		text-decoration: none;
-		font-size: 17px;
-		font-family: courier;
-		padding:  14px 16px;
-		color:  white;
-	}
-
-	.topnav a:hover {
-		color: #C38D9E;
-		text-decoration: blink;
-	}
-
-	.topnav a.active {
-		color:  #E8A87C;
-		text-decoration: underline;
-	}
-
-	.firstHead {
-		font-family: ariel;
-		font-size: 32px;
-		font-weight: bold;
-		margin-top:  90px;
-		transform: translate(10px);
-		padding: 10px, 10px;
-	}
-
-	.intray {
-		background-color: black;
-		opacity: 0.8;
-		color:  white;
-		height: 440px;
-		width: 120%;
-		margin-left: -10px;
-		display:  flex;
-		justify-content: center;
-		align-items:  center;
-		overflow: hidden;
-	}
-
-	.intray img{
-		flex-shrink: 0;
-		min-width: 100%;
-		min-height: 100%;
-	}
-
-	.box {
-		justify-content: center;
-		text-align: center;
-		background-color: black;
-		opacity: 0.7;
-		color: white;
-		margin-left: 0px;
-		padding:  15px 16px;
-		font-family: courier;
-		position:  absolute;
-	}
-
-	.head {
-		padding-left: 10px;
-		margin-left: 10px;
-		font-size: 45px;
-		color: #E8A87C;
-		font-weight: bold;
-	}
-
-	.row {
-		margin: 8px -16px;
-	}
-
-	.row,
-	.row > .column {
-		padding: 8px;
-	}
-
-	.column {
-		float:  left;
-		width:  20%;
-		border-radius: 25%;
-		margin-left: 45px;
-	}
-
-	.row:after {
-		content:  "";
-		display:  table;
-		clear:  both;
-	}
-
-	.content {
-		padding: 10px;
-		background-color: white;
-	}
-
-	.content img{
-		width: 100%;
-		height: 220px;
-	}
-
-	.content button{
-		margin-top: 8px;
-		align-content: center;
-		color: white;
-		background-color: #41B3A3;
-		height: 30px;
-		width: 180px;
-		text-align: center;
-		margin-left: 45px;
-	}
-
-	.recent{
-		margin-top: 10px;
-		text-align: center;
-		color: whitesmoke;
-		margin-left: 0;
-	}
-
-	.card {
-		box-shadow: 0 4px 8px 0 rgba(0 0 0 0.2);
-		padding:  16px;
-		text-align: center;
-		background-color: #f1f1f1;
-		color: black;
-	}
-
-	.card button{
-		background-color: #552525;
-		color:  #C58139;
-	}
-
-	.join_box {
-		margin-top: 100px;
-		width: 100%;
-		margin-left: 0;
-		overflow: hidden;
-		background-color: white;
-		color: #E8A87C;
-		text-align: center;
-		vertical-align: center;
-		padding:  100px 16px;
-	}
-
-	.join_box input{
-		margin-left: 0;
-		width: 30%;
-		margin-top: 40px;
-		border-width: 2px;
-		border-color: black;
-		height: 30px;
-	}
-
-	.join_box button{
-		margin-left: 10px;
-		background-color: #41B3A3;
-		color: white;
-		height: 30px;
-	}
-
-	.footer {
-		margin-top: 8px;
-		padding:  16px 14px;
-		text-align: center;
-		color:  white;
-	}
-
-	.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-	.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-
-	/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-    </style>
+  <link rel="stylesheet" href="css/blog_css.css">
 </head>
 <body>
 	<div class="navbar">
 		<img class ="logo" src="assets/guitarlogo.jpeg">
 		<h1 class="titleNav">Guitar Central</h1>
 		<div class="topnav">
-		   <a href="#home" class="active">Home</a>
-		   <a href="#blog">Famous Blogs</a>
-		   <a href="#about">About</a>
-		   <a href="#contact">Contact</a>
+		   <a href="index.html" class="active">Home</a>
+		   <a href="blog_page.html">Blogs</a>
+		   <a href="about.html">About</a>
+		   <a href="contact.html">Contact</a>
 	    </div>
 	</div>
 
@@ -292,7 +31,7 @@
 		<div class="row">
 			<div class="column">
 				<div class="content">
-					<img src="assets/guitar_story1.jpeg">
+					<img src="assets/guitar_story2.jpeg">
 					<h1>The Guitar that saved a life</h1>
 					<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
 					<button>See more...</button>
@@ -301,7 +40,7 @@
 			<div class="column">
 				<div class="content">
 					<img src="assets/rockergold.jpeg">
-					<h1>Rocking The Ages Like The Old Days</h1>
+					<h1>Rocking The Ages Days</h1>
 					<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
 					<button>See more...</button>
 				</div>
@@ -316,7 +55,7 @@
 			</div>
 			<div class="column">
 				<div class="content">
-					<img src="assets/guitar_story1.jpeg">
+					<img src="assets/rocking_on_guitar.jpeg">
 					<h1>The Guitar that saved a life</h1>
 					<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
 					<button>See more...</button>
@@ -350,7 +89,7 @@
 	</div>
 
 	<div class="footer">
-		<p>Guitar Centreal created by dylan_petzer © </p>
+		<p>Guitar Centreal created by dylan_petzer ©2022 </p>
 		<div class="row">
 			<a href="#" class="fa fa-facebook"></a>
 			<a href="#" class="fa fa-instagram"></a>
