@@ -2,7 +2,7 @@
 		margin-left: -10px;
 		width: 100%;
 		height:  100px;
-		background: #41B3A3;
+		background: #1F2833;
 		padding: 20px;
 		overflow: hidden;
 		position: sticky;
@@ -17,19 +17,20 @@
 	}
 
 	body {
-		background-color: #41B3A3;
+		background-color: #1F2833;
 		margin: 0;
 		scroll-behavior: smooth;
+		font-family: courier sans-serif ariel;
 	}
 
 	.titleNav {
 		font-family: courier;
-		font-size: 20px;
+		font-size: 22px;
 		float: left;
 		padding: 10px, 10px, 8px, 8px;
 		margin-left: 5px;
 		margin-top: 20px;
-		color: #C58139;
+		color: #45A29E;
 	}
 
 	.logo {
@@ -61,16 +62,16 @@
 		font-size: 17px;
 		font-family: courier;
 		padding:  14px 16px;
-		color:  white;
+		color:  #C5C6C7;
 	}
 
 	.topnav a:hover {
-		color: #C38D9E;
+		color: #45A29E;
 		text-decoration: blink;
 	}
 
 	.topnav a.active {
-		color:  #E8A87C;
+		color:  #66FCF1;
 		text-decoration: underline;
 	}
 
@@ -107,19 +108,22 @@
 		text-align: center;
 		background-color: black;
 		opacity: 0.7;
-		color: white;
+		color: #45A29E;
 		margin-left: 0px;
 		padding:  15px 16px;
 		font-family: courier;
 		position:  absolute;
+		font-weight: bold;
+		font-size: 32px;
 	}
 
 	.head {
 		padding-left: 10px;
 		margin-left: 10px;
 		font-size: 45px;
-		color: #E8A87C;
+		color: #45A29E;
 		font-weight: bold;
+		font-family: courier;
 	}
 
 	.row {
@@ -147,7 +151,8 @@
 
 	.content {
 		padding: 10px;
-		background-color: white;
+		background-color: #0B0C10;
+		color: #C5C6C7;
 	}
 
 	.content img{
@@ -159,17 +164,27 @@
 		margin-top: 8px;
 		align-content: center;
 		color: white;
-		background-color: #41B3A3;
+		font-weight: bold;
+		background-color: transparent;
+		border-style: solid;
+		border-color: #45A29E;
 		height: 30px;
 		width: 180px;
 		text-align: center;
 		margin-left: 45px;
 	}
 
+	.content button:hover {
+		background-color: #45A29E;
+		opacity: 0.8;
+		color:  white;
+		cursor: pointer;
+	}
+
 	.recent{
 		margin-top: 10px;
 		text-align: center;
-		color: whitesmoke;
+		color: #45A29E;
 		margin-left: 0;
 	}
 
@@ -177,13 +192,24 @@
 		box-shadow: 0 4px 8px 0 rgba(0 0 0 0.2);
 		padding:  16px;
 		text-align: center;
-		background-color: #f1f1f1;
-		color: black;
+		background-color: #0B0C10;
+		color: #C5C6C7;
 	}
 
 	.card button{
-		background-color: #552525;
-		color:  #C58139;
+		background-color: transparent;
+		border-color: #45A29E;
+		border-style: solid;
+		font-weight: bold;
+		color: white;
+		padding: 10px;
+	}
+
+	.card button:hover {
+		background-color: #45A29E;
+		opacity: 0.8;
+		color:  white;
+		cursor: pointer;
 	}
 
 	.join_box {
@@ -191,8 +217,8 @@
 		width: 100%;
 		margin-left: 0;
 		overflow: hidden;
-		background-color: white;
-		color: #E8A87C;
+		background-color: #C5C6C7;
+		color: #45A29E;
 		text-align: center;
 		vertical-align: center;
 		padding:  100px 16px;
@@ -209,9 +235,21 @@
 
 	.join_box button{
 		margin-left: 10px;
-		background-color: #41B3A3;
-		color: white;
+		background-color: transparent;
+		border-color: #45A29E;
+		border-style: solid;
+		border-right: none;
+		border-left: none;
+		font-weight:  bold;
+		color: #45A29E;
 		height: 30px;
+	}
+
+	.join_box button:hover {
+		cursor: pointer;
+		background-color: #45A29E;
+		color:  white;
+		font-weight: bold;
 	}
 
 	.footer {
@@ -219,6 +257,7 @@
 		padding:  16px 14px;
 		text-align: center;
 		color:  white;
+		background-color: #0B0C10;
 	}
 
 	.fa {
@@ -256,13 +295,13 @@
 
 .header {
 			padding: 10px;
-			font-family: sans-serif;
+			font-family: courier;
 			font-weight: 100;
 		}
 
 		.header h1 {
 			font-size: 64px;
-			color: white;
+			color: #45A29E;
 			margin-top: 50px;
 			margin-left: 75px;
 		}
@@ -270,7 +309,7 @@
 		.header p {
 			text-align: justify;
 			text-align: center;
-			color: whitesmoke;
+			color: #C5C6C7;
 			font-family: fantasy;
 			font-size: 22px;
 		}
@@ -285,23 +324,43 @@
 	}
 
 		.col img {
-			min-height: 100%;
+			height: 500px;
 			width: 400px;
-			margin:  20px;
-			border-color: black;
+			margin-top:  50px;
+			border-color: #45A29E;
 			border-width: 10px;
 			border-style: double;
 		}
 
+		.right {
+			background-image: "assets/rocking_on_guitar.jpeg";
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: auto;
+			min-width: 100%;
+		}
+
+
+
 		.col h1 {
-			text-align: left;
+			margin-left: -16px;
+			text-align: center;
 		}
 
 		.col {
 		float:  left;
 		width:  40%;
-		border-radius: 25%;
 		margin-left: 45px;
+		margin-top: 20px;
+		height: inherit;
+	}
+
+	.col p{
+		text-align: justify;
+		font-family: courier;
+		border-color: #45A29E;
+		border-style: solid;
+		padding:  10px;
 	}
 
 	.row2:after {
@@ -311,7 +370,6 @@
 	}
 
 	.foot {
-		margin-top: 20px;
 		padding:  16px 14px;
 		text-align: center;
 		color:  black;
