@@ -4,13 +4,18 @@
 	height:  auto;
 	margin-left: 25%;
 	margin-top: 20px;
-	background-color: white;
+	background-image: "assets/rocking_on_guitar.jpeg";
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin-bottom:  100px;
+	border-color: #45A29E;
+	border-style: solid;
+	border-width: 2px;
 }
 
 .form_box input{
 	background-color: white;
-	color: black;
+	color: #66FCF1;
 	border-width: 2px;
 	border-style: solid;
 	width: 300px;
@@ -20,7 +25,7 @@
 }
 
 .form_box label{
-	color: black;
+	color: #45A29E;
 	font-size: 17px;
 	font-weight: 600;
 	text-align: justify;
@@ -28,7 +33,7 @@
 }
 
 .form_box h1{
-	color:  black;
+	color:  #66FCF1;
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
@@ -39,3 +44,22 @@
 	height:110px;
 	margin-top:  20px;
 }
+
+button {
+		background-color: transparent;
+		border-color: #45A29E;
+		border-style: solid;
+		font-weight: bold;
+		color: white;
+		padding: 10px;
+		align-self: center;
+		margin-left:  45%;
+		margin-top: 20px;
+}
+
+button:hover {
+		cursor: pointer;
+		background-color: #45A29E;
+		color:  white;
+		font-weight: bold;
+	}
